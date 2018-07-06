@@ -21,7 +21,12 @@ currencies = ()=>{
 	     return response.json();
 	  })
 	  .then((data)=> {	  	
-	    	let jsonData = data.results;
+	    	//return array containing the given object's own enumerable property values	  	
+	    	let currenciesArray =Object.values(data.results);
+		
+		//sorting the currencies
+	    	const jsonData = [...currenciesArray].sort(function(a,b) {
+	    		return (a.currencyName > b.currencyName) ? 1 : ((b.currencyName > a.currencyName) ? -1 : 0)});
 
 	    	//create option elements,
 	    	//loop and get the id of every currency object
