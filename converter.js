@@ -147,14 +147,14 @@ myFunction = (x)=> {
     	document.querySelector('.box').style.borderRadius = "0px";
         document.querySelector('#amountInput').style.marginBottom = "15px";
         document.querySelector('#Exc_value_display').style.marginBottom = "15px";
-        document.querySelector('label').style.fontSize = "2em";
+        document.querySelector('h1').style.fontSize = "2em";
         document.querySelector('.box').style.width = "100%";
         document.querySelector('.follow').style.marginBottom = "0px;";
         document.querySelector('.follow').style.marginTop = "15px";
         document.querySelector('.fa-twitter').style.marginTop = "5px";
     } else{
     	document.querySelector('.box').style.borderRadius = "25px";
-    	document.querySelector('label').style.fontSize = "3em";
+    	document.querySelector('h1').style.fontSize = "3em";
     	document.querySelector('.box').style.width = "60%";
     }
 }
