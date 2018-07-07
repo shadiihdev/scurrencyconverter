@@ -37,7 +37,7 @@ currencies = ()=>{
 		    	let optionElement = document.createElement('option');
 		    	optionElement.value = jsonData[curr].id;
 		    	//setting the value of select dropdowns to the currency id and currencyName from the api
-		    	optionElement.innerHTML = `${jsonData[curr].id} - ${jsonData[curr].currencyName}`;
+		    	optionElement.innerHTML = `${jsonData[curr].id} - ${jsonData[curr].currencyName}(${jsonData[curr].currencySymbol})`;
 		    	//setting default selected value in both select elements
 		    	if(optionElement.value === 'USD'){
 		    		optionElement.setAttribute('selected','selected');
